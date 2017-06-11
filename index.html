@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CyberFrog</title>
+    
+    <link rel="stylesheet" href="assets/lib/materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet">
+    <link rel="stylesheet" href="assets/index.css">
+    
+</head>
+<body>
+    
+    <div class="card top-bar teal">
+        <div class="logo">CyberFrog</div>
+        <div class="main-menu">
+            <a href="dispatcher.php" class="menu-item">INICIO</a>
+            <a href="analise.html" class="menu-item">ANALISE DE RISCO</a>
+            <a href="update.php" class="menu-item">ATUALIZAR</a>
+        </div>
+    </div>
+    
+    <div class="content card">
+        <div class="content-header row">
+             <div class="input-field col s6">
+                <select id="station-select">
+                    <option value="" disabled>Selecione a Torre</option>
+                    <option value="ST-0001" selected>ST-0001</option>
+                    <option value="ST-0002" disabled>ST-0002</option>
+                    <option value="ST-0003" disabled>ST-0003</option>
+                </select>
+                <label>Materialize Select</label>
+              </div>
+            <div class="input-field col s6">
+                <a class="waves-effect waves-light btn" id="bt-load">CAREGAR</a>
+            </div>
+        </div>
+        <div class="content-data row">
+            <table class="striped highlight" id="data-table">
+                <thead>
+                    <tr>
+                        <th>Data-Hora</th>
+                        <th>Temp. Alta</th>
+                        <th>Temp. Baixa</th>
+                        <th>Umidade do AR</th>
+                        <th>Umidade do Solo</th>
+                        <th>Pressão</th>
+                        <th>Luminosidade</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td colspan="7">Sem dados, selecione uma torre para exibir os dados.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="assets/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="assets/lib/materialize/js/materialize.js"></script>
+    <script src="assets/index.js"></script>
+</body>
+</html>

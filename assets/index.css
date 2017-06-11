@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #CFCFCF;
+    padding-top: 60px;
+}
+.top-bar{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    z-index: 100000;
+    margin: 0;
+}
+.top-bar .logo{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    float: left;
+    padding-right: 20px;
+    text-align: right;
+    font-size: 30px;
+    color: #FFF;
+    line-height: 60px;
+    font-family: "El Messiri", Roboto, sans-serif;
+}
+.top-bar .main-menu{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    float: left;
+    padding-left: 20px;
+}
+.top-bar .main-menu .menu-item{
+    position: relative;
+    display: table;
+    width: auto;
+    padding: 5px;
+    height: 30px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #EEE;
+    float: left;
+}
+.top-bar .main-menu .menu-item:hover{
+    cursor: pointer;
+    background-color: RGBA(0,0,0,0.4);
+}
+
+.content{
+    position: relative;
+    width: 1000px;
+    height: auto;
+    min-height: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #FFF;
+}
+.content .content-header{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px 10px 0 10px;
+}
+.content .content-data{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.content .content-data table{
+    width: 100%;
+    float: left;
+}
+table.highlight>tbody>tr:hover{
+    background-color: #b2dfdb;
+}
+
+#data-table tr > th{
+    text-align: center;
+}
+#data-table tr > td:nth-child(1){
+    text-align: center;
+}
+.table2 tr > td:after{
+    content: '' !important;
+}
+#data-table tr > td:nth-child(2):after{
+    content: ' C°';
+}
+#data-table tr > td:nth-child(3):after, 
+#data-table tr > td:nth-child(4):after, 
+#data-table tr > td:nth-child(5):after{
+    content: '%';
+}
+#data-table tr > td:nth-child(6):after{
+    content: ' Bar';
+}
+#data-table tr > td:nth-child(7):after{
+    content: ' Lum';
+}
+
+#data-table tr > td:nth-child(2),
+#data-table tr > td:nth-child(3),
+#data-table tr > td:nth-child(4),
+#data-table tr > td:nth-child(5),
+#data-table tr > td:nth-child(6),
+#data-table tr > td:nth-child(7){
+    text-align: right;
+    padding-right: 20px;
+}
